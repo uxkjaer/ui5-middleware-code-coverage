@@ -1,0 +1,26 @@
+{
+  "name": "ui5-middleware-code-coverage",
+  "version": "0.0.1",
+  "description": "A code coverage instrumenter for UIt-tooling",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kovboyjder/ui5-middleware-code-coverage.git"
+  },
+  "keywords": [
+    "UI5-tooling",
+    "code-coverage",
+    "sapui5",
+    "openui5",
+    "ui5"
+  ],
+  "author": "Jakob Kjaer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kovboyjder/ui5-middleware-code-coverage/issues"
+  },
+  "homepage": "https://github.com/kovboyjder/ui5-middleware-code-coverage#readme"
+}
