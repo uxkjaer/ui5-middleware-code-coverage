@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/kovboyjder/ui5-middleware-code-coverage/issues"
   },
-  "homepage": "https://github.com/kovboyjder/ui5-middleware-code-coverage#readme"
+  "homepage": "https://github.com/kovboyjder/ui5-middleware-code-coverage#readme",
+  "dependencies": {
+    "istanbul-middleware": "^0.2.2"
+  }
 }
