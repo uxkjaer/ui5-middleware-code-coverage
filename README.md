@@ -49,7 +49,7 @@ server:
 ## How it works
 The middleware will launch another express nodejs server that will act as a collector and instrumenter for your code. The path in the yaml configuration tells the package which folder and subsequent JS files needs to be instrumented for code coverage. 
 
-The coverage is stored in your browser session in the window.__coverage__ object. You can use this plugin together with [Selenium](https://medium.com/@the1mills/front-end-javascript-test-coverage-with-istanbul-selenium-4b2be44e3e98) and after execution of your scripts submit the code coverage or you can simply use it manually and after your testing submit the coverage to the server using below snippet.
+The coverage is stored in your browser session in the `window.__coverage__` object. You can use this plugin together with [Selenium](https://medium.com/@the1mills/front-end-javascript-test-coverage-with-istanbul-selenium-4b2be44e3e98) and after execution of your scripts submit the code coverage or you can simply use it manually and after your testing submit the coverage to the server using below snippet.
 
 ```
 $.ajax({
