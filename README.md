@@ -43,8 +43,12 @@ server:
     mountPath: /
     configuration:
       path: "webapp"
+      enabled: "false"
+
 
 ```
+
+The path is which folder you want to cover. The enabled is whether you want to switch the coverage on or off. Handy when you are doing development as the instrumented code is a bit messy.
 
 ## How it works
 The middleware will launch another express nodejs server that will act as a collector and instrumenter for your code. The path in the yaml configuration tells the package which folder and subsequent JS files needs to be instrumented for code coverage. 
