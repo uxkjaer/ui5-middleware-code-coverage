@@ -7,7 +7,8 @@
     "test": "npm run-script lint",
     "lint": "eslint lib/**/*.js",
     "version": "standard-version",
-    "deploy": "npm run-script test && npm run-script version && npm publish"
+    "deploy": "npm run-script test && npm run-script version && npm publish",
+    "push": "npm run-script version && git push"
   },
   "repository": {
     "type": "git",
