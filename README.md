@@ -3,7 +3,7 @@ A code coverage instrumenter for UI5-tooling
 
 Middleware for [ui5-server](https://github.com/SAP/ui5-server), enabling code coverage.
 
-This is a wrapper for the [Istanbul-Middleware](https://www.npmjs.com/package/istanbul-middleware).
+This is a wrapper for the [Istanbul-Middleware](https://www.npmjs.com/package/istanbul-middleware). 
 
 ## Install
 
