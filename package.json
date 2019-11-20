@@ -1,6 +1,6 @@
 {
   "name": "ui5-middleware-code-coverage",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A code coverage instrumenter for UIt-tooling ",
   "main": "index.js",
   "scripts": {
