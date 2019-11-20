@@ -1,7 +1,7 @@
 {
   "name": "ui5-middleware-code-coverage",
   "version": "0.0.5",
-  "description": "A code coverage instrumenter for UIt-tooling ",
+  "description": "A code coverage instrumenter for UI5-tooling ",
   "main": "index.js",
   "scripts": {
     "test": "npm run-script lint",
