@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/kovboyjder/ui5-middleware-code-coverage#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "istanbul-middleware": "github:kovboyjder/istanbul-middleware"
   },
