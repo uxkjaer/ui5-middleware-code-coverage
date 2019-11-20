@@ -14,26 +14,12 @@ jobs:
       - run: npm test
         
   version-bump:
-    name: "Bump Version on master"
+    name: NPM publish if not present
     runs-on: ubuntu-latest
-    needs: build
     steps:
-      - name: "Checkout source code"
-        uses: "actions/checkout@v1"
-        with:
-          ref: ${{ github.ref }}
-      - name: "cat package.json"
-        run: cat ./package.json
-      - name: "Setup Node.js"
-        uses: "actions/setup-node@v1"
-        with:
-          node-version: 8.10.0
-      - name: "Automated Version Bump"
-        uses: "phips28/gh-action-bump-version@master"
+      - uses: romainseb/action-npm-publish-if-not-present@0.0.2
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: "cat package.json"
-        run: cat ./package.json
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
   
   publish-npm:
     needs: version-bump
