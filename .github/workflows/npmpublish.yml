@@ -12,28 +12,18 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npm test
-        
-  version-bump:
-    name: NPM publish if not present
-    runs-on: ubuntu-latest
-    steps:
-      - uses: romainseb/action-npm-publish-if-not-present@0.0.2
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+  
   
   publish-npm:
-    needs: version-bump
+    needs: build
     runs-on: ubuntu-latest
+    name: Automated releases for npm packages.
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: git pull
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: npm publish
+      - uses: mikeal/merge-release@v4.0.7
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
