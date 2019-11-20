@@ -1,11 +1,13 @@
 {
   "name": "ui5-middleware-code-coverage",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A code coverage instrumenter for UIt-tooling ",
   "main": "index.js",
   "scripts": {
     "test": "npm run-script lint",
-    "lint": "eslint src/**/*.js"
+    "lint": "eslint lib/**/*.js",
+    "version": "standard-version",
+    "deploy": "npm run-script test && npm run-script version && npm publish"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,7 @@
   "devDependencies": {
     "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.9.0"
+    "eslint-plugin-import": "^2.9.0",
+    "standard-version": "^7.0.1"
   }
 }
