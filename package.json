@@ -4,7 +4,8 @@
   "description": "A code coverage instrumenter for UIt-tooling",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run-script lint",
+    "lint": "eslint src/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,12 @@
   },
   "homepage": "https://github.com/kovboyjder/ui5-middleware-code-coverage#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "istanbul-middleware": "github:kovboyjder/istanbul-middleware"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0"
   }
 }
