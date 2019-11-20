@@ -26,4 +26,4 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - uses: mikeal/merge-release@v4.0.7
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NPM_AUTH_TOKEN: ${{secrets.npm_token}}
