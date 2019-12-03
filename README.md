@@ -8,7 +8,7 @@ This is a wrapper for the [Istanbul-Middleware](https://www.npmjs.com/package/is
 ## Install
 
 ```bash
-npm install ui5-middleware-proxy-basicauth --save-dev
+npm install ui5-middleware-code-coverage --save-dev
 ```
 
 ## Configuration options (in `$yourapp/ui5.yaml`)
