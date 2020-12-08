@@ -24,9 +24,7 @@
   },
   "homepage": "https://github.com/kovboyjder/ui5-middleware-code-coverage#readme",
   "dependencies": {
-    "@istanbuljs/nyc-config-babel": "^3.0.0",
     "@ui5/logger": "*",
-    "babel-plugin-istanbul": "^6.0.0",
     "cors": "*",
     "express": "*",
     "jade": "^1.11.0",
