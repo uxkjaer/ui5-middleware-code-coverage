@@ -1,6 +1,6 @@
 {
   "name": "ui5-middleware-code-coverage",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A code coverage instrumenter for UI5-tooling using NYC ",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "express": "*",
     "jade": "^1.11.0",
     "nyc": "*",
-    "nyc-middleware": "^1.0.0"
+    "nyc-middleware": "^1.0.1"
   },
   "devDependencies": {
     "eslint": "^6.6.0",
