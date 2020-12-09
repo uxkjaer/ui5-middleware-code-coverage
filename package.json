@@ -1,7 +1,7 @@
 {
   "name": "ui5-middleware-code-coverage",
-  "version": "0.0.14",
-  "description": "A code coverage instrumenter for UI5-tooling ",
+  "version": "2.0.1",
+  "description": "A code coverage instrumenter for UI5-tooling using NYC ",
   "main": "index.js",
   "scripts": {
     "test": "npm run-script lint",
@@ -9,10 +9,6 @@
     "version": "standard-version",
     "deploy": "npm run-script test && npm run-script version && npm publish",
     "push": "npm run-script version && git push"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kovboyjder/ui5-middleware-code-coverage.git"
   },
   "keywords": [
     "UI5-tooling",
@@ -28,9 +24,12 @@
   },
   "homepage": "https://github.com/kovboyjder/ui5-middleware-code-coverage#readme",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "istanbul-middleware": "github:kovboyjder/istanbul-middleware"
+    "@ui5/logger": "*",
+    "cors": "*",
+    "express": "*",
+    "jade": "^1.11.0",
+    "nyc": "*",
+    "nyc-middleware": "^1.0.1"
   },
   "devDependencies": {
     "eslint": "^6.6.0",
