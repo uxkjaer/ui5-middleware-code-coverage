@@ -1,6 +1,6 @@
 {
   "name": "ui5-middleware-code-coverage",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "description": "A code coverage instrumenter for UI5-tooling using NYC ",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,10 @@
     "version": "standard-version",
     "deploy": "npm run-script test && npm run-script version && npm publish",
     "push": "npm run-script version && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/uxkjaer/ui5-middleware-code-coverage.git"
   },
   "keywords": [
     "UI5-tooling",
@@ -27,14 +31,11 @@
     "@ui5/logger": "*",
     "cors": "*",
     "express": "*",
-    "jade": "^1.11.0",
     "nyc": "*",
-    "nyc-middleware": "^1.0.1"
+    "nyc-middleware": "^1.0.2"
   },
   "devDependencies": {
     "eslint": "^6.6.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.9.0",
-    "standard-version": "8.0.0"
+    "eslint-plugin-import": "^2.9.0"
   }
 }
