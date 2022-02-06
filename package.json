@@ -31,11 +31,11 @@
     "@ui5/logger": "*",
     "cors": "*",
     "express": "*",
-    "nyc": "*",
+    "nyc": "15.1.0",
     "nyc-middleware": "^1.0.2"
   },
   "devDependencies": {
-    "eslint": "^6.6.0",
+    "eslint": "^8.8.0",
     "eslint-plugin-import": "^2.9.0"
   }
 }
