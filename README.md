@@ -1,4 +1,6 @@
 # ui5-middleware-code-coverage
+
+**Deprecated, check out [ui5-middleware-code-coverage-advanced](https://www.npmjs.com/package/ui5-middleware-code-coverage-advanced) instead
 A code coverage instrumenter for UI5-tooling
 
 Middleware for [ui5-server](https://github.com/SAP/ui5-server), enabling code coverage.
